@@ -141,6 +141,27 @@ input[type="text"] {
     border: 1px solid hsl(0, 0%, 80%);
 }
 
+.task-priority {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 75%);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.task-priority:focus {
+    outline: none;
+    border-color: hsl(0, 0%, 80%);
+    background-color: #fff;
+}
+
+.task-priority::placeholder {
+    color: #aaa;
+}
+
 .date-input {
     width: 100%;
     padding: 10px;
@@ -206,7 +227,7 @@ li {
     display: flex;
     align-items: center;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 10px;
     color: hsl(0, 0%, 0%);
 }
@@ -221,7 +242,8 @@ li {
 }
 
 
-input[type="checkbox"] {
+input[type="checkbox"],
+i {
     cursor: pointer;
 }
 
